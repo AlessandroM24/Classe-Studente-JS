@@ -2,6 +2,7 @@
 <html lang="it">
 
 <head>
+    <link rel="stylesheet" href="assets/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classe Studente</title>
@@ -9,8 +10,31 @@
 
 <body>
 
+    <form name="modulo">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </p>
+        <br>
+        <p>
+            <label for="cognome">Cognome:</label>
+            <input type="text" name="cognome" id="cognome">
+        </p>
+        <br>
+        <p>
+            <label for="eta">Età:</label>
+            <input type="text" name="eta" id="eta">
+        </p>
+        <br>
+        <p>
+            <label for="metricola">Matricola:</label>
+            <input type="text" name="matricola" id="matricola">
+        </p>
+        <br>
+        <button onclick="invia(event)">Invia</button>
+    </form>
 
-
+    <p id="risultato"></p>
     <script src="assets/js/app.js"></script>
 </body>
 
